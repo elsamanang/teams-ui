@@ -1,0 +1,43 @@
+<Window
+    x:Class="teams_ui.MainWindow"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:avalonia="using:Material.Icons.Avalonia"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="teams_ui"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    Background="{DynamicResource White200}"
+    ExtendClientAreaToDecorationsHint="True"
+    TransparencyLevelHint="AcrylicBlur">
+    <Grid RowDefinitions="55,*">
+        <Grid
+            x:Name="Title"
+            Grid.Row="0"
+            ColumnDefinitions="300,*,150, 150">
+            <StackPanel
+                Grid.Column="0"
+                Margin="10,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                Orientation="Horizontal">
+                <Button
+                    VerticalAlignment="Center"
+                    Classes="Icon"
+                    Content="{avalonia:MaterialIconExt Kind=ChevronLeft,
+                                                       Size=25}" />
+                <Button
+                    VerticalAlignment="Center"
+                    Classes="Icon"
+                    Content="{avalonia:MaterialIconExt Kind=ChevronRight,
+                                                       Size=25}" />
+            </StackPanel>
+            <TextBox Grid.Column="1" Classes="Search" />
+            <TextBlock Grid.Column="2" HorizontalAlignment="Right" />
+        </Grid>
+        <Grid Grid.Row="1">
+            <Button Classes="Icon" Content="{avalonia:MaterialIconExt Kind=Usb, Size=30}" />
+        </Grid>
+    </Grid>
+</Window>
