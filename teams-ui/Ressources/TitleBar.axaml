@@ -27,7 +27,6 @@
         <Setter Property="Width" Value="600" />
         <Setter Property="Height" Value="30" />
         <Setter Property="Margin" Value="8,15" />
-        <Setter Property="Text" Value="Recherche" />
         <Setter Property="Foreground" Value="{DynamicResource Black300}" />
         <Setter Property="BorderThickness" Value="0" />
         <Setter Property="CornerRadius" Value="5" />
@@ -35,7 +34,6 @@
         <Setter Property="HorizontalAlignment" Value="Center" />
     </Style>
     <Style Selector="TextBox.Search:pointerover">
-        <Setter Property="Text" Value="Recherche" />
         <Setter Property="Foreground" Value="{DynamicResource Blue300}" />
         <Setter Property="Background" Value="Transparent" />
     </Style>
