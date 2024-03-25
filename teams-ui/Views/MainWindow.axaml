@@ -5,6 +5,7 @@
     xmlns:avalonia="using:Material.Icons.Avalonia"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:myMenu="clr-namespace:teams_ui.Utils.Components"
     Name="Fenetre"
     Title="teams_ui"
     d:DesignHeight="450"
@@ -21,7 +22,7 @@
             ColumnDefinitions="300,*,150, 150">
             <StackPanel
                 Grid.Column="0"
-                Margin="10,0"
+                Margin="3,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Center"
                 Orientation="Horizontal">
@@ -42,7 +43,12 @@
                 Watermark="Recherche" />
         </Grid>
         <Grid Grid.Row="1">
-            <Button Classes="Icon" Content="{avalonia:MaterialIconExt Kind=Usb, Size=30}" />
+            <Grid ColumnDefinitions="75,*">
+                <Border Grid.Column="0" BoxShadow="0 0 8 0 DarkGray">
+                    <myMenu:SideBar />
+                </Border>
+                <Grid Grid.Column="1" />
+            </Grid>
         </Grid>
     </Grid>
 </Window>

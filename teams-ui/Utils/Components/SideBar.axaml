@@ -1,0 +1,32 @@
+<UserControl
+    x:Class="teams_ui.Utils.Components.SideBar"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:avalonia="using:Material.Icons.Avalonia"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="auto"
+    d:DesignWidth="80"
+    mc:Ignorable="d">
+    <StackPanel>
+        <StackPanel
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Classes="Menu">
+            <avalonia:MaterialIcon
+                Height="30"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Foreground="{DynamicResource Black300}"
+                Kind="Bell" />
+            <TextBlock
+                Height="28"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Classes="Item"
+                FontSize="11"
+                Foreground="{DynamicResource Black300}"
+                Text="Activité" />
+        </StackPanel>
+    </StackPanel>
+</UserControl>
